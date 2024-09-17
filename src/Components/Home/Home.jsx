@@ -1,12 +1,12 @@
-import Analytics from "../Analytics/Analytics";
-import Banner from "../Banner/Banner";
-import Catogory from "../Catogory/Catogory";
-import Discount from "../Discount/Discount";
+import Banner from "./Banner/Banner";
+import Catogory from "./Catogory/Catogory";
+import Discount from "./Discount/Discount";
 import Blogs from "./Blogs/Blogs";
 import Brand from "./Brand/Brand";
 import Community from "./Community/Community";
 import PopulerBooks from "./PopulerBooks/PopulerBooks";
 import Reviews from "./Reviews/Reviews";
+import AnalyticSection from "./AnalyticSection/AnalyticSection";
 
 const Home = () => {
   return (
@@ -19,7 +19,7 @@ const Home = () => {
       <Reviews></Reviews>
       <Blogs></Blogs>
       <Community></Community>
-      <Analytics></Analytics>
+      <AnalyticSection></AnalyticSection>
     </div>
   );
 };
