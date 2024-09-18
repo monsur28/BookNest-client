@@ -7,9 +7,8 @@ import { FaHeart } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false); 
+  const [isOpen, setIsOpen] = useState(false);
 
-  
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
@@ -17,96 +16,120 @@ const Navbar = () => {
   const navlinks = [
     {
       labe: "Home",
-      link: "/"
+      link: "/",
     },
     {
       labe: "Books",
-      link: "/books"
+      link: "/books",
     },
     {
       labe: "Blogs",
-      link: "/blogs"
+      link: "/blogs",
     },
     {
       labe: "Contact",
-      link: "/contact"
-    }
+      link: "/contact",
+    },
 
-    ,
     {
       labe: "About",
-      link: "/about"
-    }
+      link: "/about",
+    },
   ];
 
-
-
   return (
-    <div className="navbar flex justify-between  bg-base-100  p-4 container mx-auto">
-      
-
-      
-
+    <div className="navbar justify-between container mx-auto">
       {/* Desktop View */}
-      <div className="navbar-center hidden lg:flex">
-        <Link to="/" className="btn btn-ghost normal-case text-xl">BookNest1</Link>
-        <ul className="menu menu-horizontal px-1">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/books">Books</Link></li>
-          <li><Link to="/blogs">Blogs</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-          <li><Link to="/about">About</Link></li>
+      <div className="navbar hidden lg:flex">
+        <Link to="/" className="btn btn-ghost normal-case text-3xl">
+          BookNest
+        </Link>
+        <ul className="navbar justify-end menu menu-horizontal px-1 text-xl">
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/books">Books</Link>
+          </li>
+          <li>
+            <Link to="/blogs">Blogs</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
         </ul>
       </div>
 
       <div className="navbar-end hidden lg:flex">
-       
-      
-        <button className="btn btn-ghost"><FaHeart /></button>
-        <button className="btn btn-ghost"><CiSearch /></button>
-        <button className="btn btn-ghost"><MdAccountCircle /></button>
-        <button className="btn btn-ghost"><FaShoppingCart /></button>
+        <button className="btn btn-ghost text-xl">
+          <FaHeart />
+        </button>
+        <button className="btn btn-ghost text-xl">
+          <CiSearch />
+        </button>
+        <button className="btn btn-ghost text-xl">
+          <MdAccountCircle />
+        </button>
+        <button className="btn btn-ghost text-xl">
+          <FaShoppingCart />
+        </button>
       </div>
-
-
-
 
       {/* Tablet View */}
       <div className="navbar justify-between hidden md:flex lg:hidden">
-        <Link to="/" className="btn btn-ghost normal-case text-xl">BookNest</Link>
-        <ul className="menu menu-horizontal px-1 w-[750px] ml-auto">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/books">Books</Link></li>
-          <li><Link to="/blogs">Blogs</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-          <li><Link to="/about" className="">About</Link></li>
+        <Link to="/" className="btn btn-ghost normal-case text-xl">
+          BookNest
+        </Link>
+        <ul className="navbar-center menu menu-horizontal px-1">
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/books">Books</Link>
+          </li>
+          <li>
+            <Link to="/blogs">Blogs</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+          <li>
+            <Link to="/about" className="">
+              About
+            </Link>
+          </li>
         </ul>
         <div className="navbar-end w-[80px] ml-[20px]">
-        
-        <button className="btn btn-ghost"><CiSearch className="" /></button>
-        <button className="btn btn-ghost"><MdAccountCircle /></button>
-        <button className="btn btn-ghost"><FaShoppingCart /></button>
-          
+          <button className="btn btn-ghost">
+            <CiSearch className="" />
+          </button>
+          <button className="btn btn-ghost">
+            <MdAccountCircle />
+          </button>
+          <button className="btn btn-ghost">
+            <FaShoppingCart />
+          </button>
         </div>
       </div>
 
-
       {/* Mobile View */}
-      <div className="w-full lg:hidden md:hidden">
-        
+      <div className="lg:hidden md:hidden navbar">
         <button onClick={toggleSidebar} className="btn btn-ghost">
           {/* Hamburger Icon */}
           <RxHamburgerMenu />
         </button>
-        <Link to="/" className="btn btn-ghost normal-case text-xl">
-        BookNest
+        <Link
+          to="/"
+          className="btn btn-ghost normal-case text-xl navbar-center ml-12"
+        >
+          BookNest
         </Link>
         <button className="navbar-end">
-        <FaShoppingCart />
-          </button>
-        
-
-
+          <FaShoppingCart />
+        </button>
       </div>
 
       {/* Sidebar for Mobile */}
@@ -137,10 +160,10 @@ const Navbar = () => {
         </button>
         <ul className="menu p-4">
           {navlinks.map((d, i) => (
-                <Link key={i} className="font-bold" href={d.link}>
-                  {d.labe}
-                </Link>
-              ))}
+            <Link key={i} className="font-bold" to={d.link}>
+              {d.labe}
+            </Link>
+          ))}
         </ul>
       </div>
 
@@ -151,7 +174,6 @@ const Navbar = () => {
           onClick={toggleSidebar}
         />
       )}
-
     </div>
   );
 };
