@@ -16,10 +16,6 @@ const Discount = () => {
             </div>
 
             <div className="flex justify-center sm:justify-end items-center p-2 bg-gradient-to-b from-[#4e0083] to-[#796089] rounded-bl-[230px] w-full h-full">
-              {/* <div className="text-center border-2 border-gray-600 px-4 py-6 rounded-md">
-                <h3 className="text-white text-4xl font-bold">400+</h3>
-                <p className="text-base text-gray-400 font-semibold mt-4">Unique Visitors</p>
-              </div> */}
               <div className="h-44 w-44 lg:h-72 lg:w-72 rounded-full bg-gradient-to-tr from-[#4e0083] to-[#c19ed6] p-5">
                 <img
                   src="https://i.ibb.co.com/wdszp6d/greek-Islan.webp"
@@ -62,7 +58,6 @@ const Discount = () => {
               </div>
             </div>
           </div>
-          {/* Decorative Circles */}
           <div className="absolute -top-[50px] -left-[50px] w-20 h-20 sm:w-28 sm:h-28 rounded-full bg-[#d4d405] opacity-40 shadow-lg"></div>
           <div className="absolute -top-10 -left-10 w-20 h-20 sm:w-28 sm:h-28 rounded-full bg-[#d4d405] opacity-40 shadow-lg"></div>
         </div>
