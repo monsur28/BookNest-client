@@ -107,7 +107,11 @@ const Navbar = () => {
             <CiSearch className="" />
           </button>
           <button className="btn btn-ghost">
+
+            <Link to='/login'><MdAccountCircle /></Link>
+
             <MdAccountCircle />
+
           </button>
           <button className="btn btn-ghost">
             <FaShoppingCart />
