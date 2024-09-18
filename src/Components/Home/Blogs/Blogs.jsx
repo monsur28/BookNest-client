@@ -31,12 +31,14 @@ const BlogPost = () => {
               />
               <div>
                 <p className="text-gray-400 text-sm">{post.date}</p>
-                <h3 className="text-lg font-semibold">{post.title}</h3>
+                <h3 className="text-lg font-semibold hover:text-red-400">
+                  {post.title}
+                </h3>
               </div>
             </div>
           ))}
         </div>
-        <div className="col-span-1 space-y-6">
+        <div className="col-span-1 max-h-max space-y-6">
           {posts.slice(3, 4).map((post) => (
             <div key={post.id} className="relative rounded-lg overflow-hidden">
               <img
@@ -47,7 +49,7 @@ const BlogPost = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black"></div>
               <div className="absolute bottom-0 left-0 px-8 pt-52 w-full h-full">
                 <p className="text-white text-sm">{post.date} / BY ADMIN</p>
-                <h3 className="text-white text-2xl font-bold mt-2">
+                <h3 className="text-white text-2xl font-bold mt-2 hover:text-red-400">
                   {post.title}
                 </h3>
                 <button className="text-white mt-6 underline">Read More</button>
@@ -57,7 +59,7 @@ const BlogPost = () => {
         </div>
 
         <div className="space-y-6">
-          {posts.slice(0, 4).map((post) => (
+          {posts.slice(5, 9).map((post) => (
             <div key={post.id} className="flex items-center space-x-4">
               <img
                 src={post.image}
@@ -66,7 +68,9 @@ const BlogPost = () => {
               />
               <div>
                 <p className="text-gray-400 text-sm">{post.date}</p>
-                <h3 className="text-lg font-semibold">{post.title}</h3>
+                <h3 className="text-lg font-semibold hover:text-red-400">
+                  {post.title}
+                </h3>
               </div>
             </div>
           ))}
