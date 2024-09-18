@@ -1,0 +1,83 @@
+[
+    {
+      "id": 1,
+      "title": "5 Must-Read Fantasy Books in 2024",
+      "date": "January 5, 2024",
+      "image": "https://static1.srcdn.com/wordpress/wp-content/uploads/2024/04/most-anticipated-fantasy-books-2024.jpg?q=70&fit=crop&w=1100&h=618&dpr=1",
+      "category": "FANTASY",
+      "longDescription": "Dive into worlds filled with magic and adventure with our top 5 fantasy book picks of 2024. From epic sagas to character-driven novels, these books are sure to transport you to different realms."
+    },
+    {
+      "id": 2,
+      "title": "Top 10 Mystery Novels That Will Keep You Guessing",
+      "date": "February 12, 2024",
+      "image": "https://s.yimg.com/ny/api/res/1.2/Nn6.tL8CFMnjFBxN8AMNyA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyNDI7aD04OTQ7Y2Y9d2VicA--/https://media.zenfs.com/en/purewow_185/8b0cea0a1d3ab198a167ca1a9a445bff",
+      "category": "MYSTERY",
+      "longDescription": "Discover the top 10 mystery novels that will have you on the edge of your seat. These novels feature gripping plots, unexpected twists, and unforgettable characters."
+    },
+    {
+      "id": 3,
+      "title": "The Best Science Fiction Books of the Decade",
+      "date": "March 22, 2024",
+      "image": "https://discoverscifi.com/wp-content/uploads/2021/04/The-Top-10-Co-Written-Sci-Fi-Books-of-all-Time-1-1030x584.png",
+      "category": "SCIENCE FICTION",
+      "longDescription": "Explore the best science fiction books of the past decade. These novels take readers on thrilling adventures through time, space, and futuristic societies while tackling profound themes of technology and humanity."
+    },
+    {
+      "id": 4,
+      "title": "10 Non-Fiction Books to Broaden Your Horizons",
+      "date": "April 15, 2024",
+      "image": "https://wp.penguin.co.uk/wp-content/uploads/2020/07/vintage-in-article-Image-june-02-1.jpg",
+      "category": "NON-FICTION",
+      "longDescription": "Expand your understanding of the world with these 10 non-fiction books. Covering topics from history to science, these books will challenge your views and introduce new perspectives."
+    },
+    {
+      "id": 5,
+      "title": "A Beginner's Guide to Classic Literature",
+      "date": "May 3, 2024",
+      "image": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*GAIsrXGT12LzpqCjpJXIeA.png",
+      "category": "CLASSICS",
+      "longDescription": "Not sure where to start with classic literature? This beginner's guide introduces you to some of the most timeless literary works that continue to shape modern literature and culture."
+    }, 
+    {
+        "id": 6,
+        "title": "5 Must-Read Fantasy Books in 2024",
+        "date": "January 5, 2024",
+        "image": "https://static1.srcdn.com/wordpress/wp-content/uploads/2024/04/most-anticipated-fantasy-books-2024.jpg?q=70&fit=crop&w=1100&h=618&dpr=1",
+        "category": "FANTASY",
+        "longDescription": "Dive into worlds filled with magic and adventure with our top 5 fantasy book picks of 2024. From epic sagas to character-driven novels, these books are sure to transport you to different realms."
+      },
+      {
+        "id": 7,
+        "title": "Top 10 Mystery Novels That Will Keep You Guessing",
+        "date": "February 12, 2024",
+        "image": "https://s.yimg.com/ny/api/res/1.2/Nn6.tL8CFMnjFBxN8AMNyA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyNDI7aD04OTQ7Y2Y9d2VicA--/https://media.zenfs.com/en/purewow_185/8b0cea0a1d3ab198a167ca1a9a445bff",
+        "category": "MYSTERY",
+        "longDescription": "Discover the top 10 mystery novels that will have you on the edge of your seat. These novels feature gripping plots, unexpected twists, and unforgettable characters."
+      },
+      {
+        "id": 8,
+        "title": "The Best Science Fiction Books of the Decade",
+        "date": "March 22, 2024",
+        "image": "https://discoverscifi.com/wp-content/uploads/2021/04/The-Top-10-Co-Written-Sci-Fi-Books-of-all-Time-1-1030x584.png",
+        "category": "SCIENCE FICTION",
+        "longDescription": "Explore the best science fiction books of the past decade. These novels take readers on thrilling adventures through time, space, and futuristic societies while tackling profound themes of technology and humanity."
+      },
+      {
+        "id": 9,
+        "title": "10 Non-Fiction Books to Broaden Your Horizons",
+        "date": "April 15, 2024",
+        "image": "https://wp.penguin.co.uk/wp-content/uploads/2020/07/vintage-in-article-Image-june-02-1.jpg",
+        "category": "NON-FICTION",
+        "longDescription": "Expand your understanding of the world with these 10 non-fiction books. Covering topics from history to science, these books will challenge your views and introduce new perspectives."
+      },
+      {
+        "id": 10,
+        "title": "A Beginner's Guide to Classic Literature",
+        "date": "May 3, 2024",
+        "image": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*GAIsrXGT12LzpqCjpJXIeA.png",
+        "category": "CLASSICS",
+        "longDescription": "Not sure where to start with classic literature? This beginner's guide introduces you to some of the most timeless literary works that continue to shape modern literature and culture."
+      }
+  ]
+  
