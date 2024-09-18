@@ -1,3 +1,4 @@
+
 import Marquee from "react-fast-marquee";
 import { Link} from "react-router-dom";
 import { useForm } from "react-hook-form";
@@ -102,6 +103,14 @@ const Login = () => {
         </div>
       </div>
     </div>
+
+
+const Login = () => {
+    return (
+        <div>
+            <h1>Login</h1>
+        </div>
+
     );
 };
 
