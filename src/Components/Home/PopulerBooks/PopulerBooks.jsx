@@ -11,7 +11,7 @@ const PopularBooks = () => {
 
   return (
     <div className="my-10 container mx-auto">
-                            {/* Header */}
+      {/* Header */}
       <div className="flex items-center justify-between mb-8">
         <h2 className="text-xl lg:text-4xl font-semibold text-black">
           Popular Books
@@ -21,7 +21,7 @@ const PopularBooks = () => {
           View All
         </button>
       </div>
-                           {/* Popular Book Grid Section */}
+      {/* Popular Book Grid Section */}
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 p-2">
         <div className="col-span-1 lg:col-span-3 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {popularBooks.slice(0, 8).map((book) => (
@@ -63,7 +63,7 @@ const PopularBooks = () => {
             </div>
           ))}
         </div>
-                           {/*Popular Books offer card */}
+        {/*Popular Books offer card */}
         <div className="col-span-1 relative">
           <img
             className="h-72 md:h-96 lg:h-full object-cover w-full rounded-xl hover:scale-105 transition-transform "
