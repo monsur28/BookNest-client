@@ -1,8 +1,6 @@
 const Discount = () => {
   return (
     <div>
-      <h1 className="text-xl lg:text-4xl font-semibold text-black">Discount</h1>
-      
       <div className="flex flex-col lg:flex-row justify-between gap-6 p-2">
         <div className="bg-gray-50 font-[sans-serif] relative max-w-4xl shadow-lg shadow-[#e9d9f3] mx-auto rounded-3xl overflow-hidden cursor-pointer">
           <div className="grid grid-cols-1 sm:grid-cols-2 max-sm:gap-6">
@@ -11,7 +9,7 @@ const Discount = () => {
                 <span className="text-gray-800">Book </span>20% gift
               </h3>
               <h6 className="text-lg text-gray-800 mt-4">
-              It all begins with a great book!
+                It all begins with a great book!
               </h6>
             </div>
 
@@ -62,10 +60,7 @@ const Discount = () => {
           <div className="absolute -top-10 -left-10 w-20 h-20 sm:w-28 sm:h-28 rounded-full bg-[#d4d405] opacity-40 shadow-lg"></div>
         </div>
       </div>
-
-
     </div>
-
   );
 };
 
