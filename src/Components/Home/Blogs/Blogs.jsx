@@ -11,9 +11,12 @@ const BlogPost = () => {
 
   return (
     <div className="container mx-auto bg-gray-50 p-8">
-      <div className="flex justify-between items-center">
-        <h2 className="text-4xl font-bold mb-6">Latest Blog Post</h2>
-        <button className="bg-red-500 text-white px-6 py-2 rounded-full">
+      <div className="flex items-center justify-between mb-8">
+        <h2 className="text-xl lg:text-4xl font-semibold text-black">
+          Latest Blog Post
+        </h2>
+        <div className="border-t-2 border-gray-300 w-[25%] md:w-[60%] lg:w-[65%] mt-4"></div>
+        <button className="btn rounded-3xl bg-[#F65D4E] text-white px-8">
           View All
         </button>
       </div>
