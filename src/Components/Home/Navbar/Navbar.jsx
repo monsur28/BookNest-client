@@ -5,6 +5,7 @@ import { MdAccountCircle } from "react-icons/md";
 import { CiSearch } from "react-icons/ci";
 import { FaHeart } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
+import logo from "../../../assets/BookNest.png"; // Your logo path
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,135 +15,89 @@ const Navbar = () => {
   };
 
   const navlinks = [
-    {
-      labe: "Home",
-      link: "/",
-    },
-    {
-      labe: "Books",
-      link: "/books",
-    },
-    {
-      labe: "Blogs",
-      link: "/blogs",
-    },
-    {
-      labe: "Contact",
-      link: "/contact",
-    },
-
-    {
-      labe: "About",
-      link: "/about",
-    },
+    { label: "Home", link: "/" },
+    { label: "Books", link: "/books" },
+    { label: "Blogs", link: "/blogs" },
+    { label: "Contact", link: "/contact" },
+    { label: "About", link: "/about" },
   ];
 
   return (
     <div className="navbar justify-between container mx-auto">
       {/* Desktop View */}
-      <div className="navbar hidden lg:flex">
-        <Link to="/" className="btn btn-ghost normal-case text-3xl">
-          BookNest
+      <div className="navbar hidden lg:flex items-center">
+        <Link to="/" className=" normal-case text-3xl">
+          <img src={logo} alt="BookNest Logo" className="w-[160px] h-auto" />
         </Link>
         <ul className="navbar justify-end menu menu-horizontal px-1 text-xl">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/books">Books</Link>
-          </li>
-          <li>
-            <Link to="/blogs">Blogs</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
+          {navlinks.map((navlink, index) => (
+            <li key={index}>
+              <Link to={navlink.link}>{navlink.label}</Link>
+            </li>
+          ))}
         </ul>
       </div>
 
       <div className="navbar-end hidden lg:flex">
         <button className="btn btn-ghost text-xl">
-          <FaHeart />
+          <FaHeart className="text-2xl" />
         </button>
         <button className="btn btn-ghost text-xl">
-          <CiSearch />
-        </button>
-        <button className="btn btn-ghost text-xl">
-          <MdAccountCircle />
+          <CiSearch className="text-2xl" />
         </button>
         <Link to="login">
           <button className="btn btn-ghost text-xl">
-            <MdAccountCircle />
+            <MdAccountCircle className="text-2xl" />
           </button>
         </Link>
         <button className="btn btn-ghost text-xl">
-          <FaShoppingCart />
+          <FaShoppingCart className="text-2xl" />
         </button>
       </div>
 
       {/* Tablet View */}
       <div className="navbar justify-between hidden md:flex lg:hidden">
-        <Link to="/" className="btn btn-ghost normal-case text-xl">
-          BookNest
+        <Link to="/" className=" normal-case text-3xl">
+          <img src={logo} alt="BookNest Logo" className="w-[160px] h-auto" />
         </Link>
         <ul className="navbar-center menu menu-horizontal px-1">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/books">Books</Link>
-          </li>
-          <li>
-            <Link to="/blogs">Blogs</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-          <li>
-            <Link to="/about" className="">
-              About
-            </Link>
-          </li>
+          {navlinks.map((navlink, index) => (
+            <li key={index}>
+              <Link to={navlink.link}>{navlink.label}</Link>
+            </li>
+          ))}
         </ul>
         <div className="navbar-end w-[80px] ml-[20px]">
           <button className="btn btn-ghost">
-            <CiSearch className="" />
+            <CiSearch className="text-2xl" />
           </button>
           <button className="btn btn-ghost">
-            <MdAccountCircle />
             <Link to="/login">
-              <MdAccountCircle />
+              <MdAccountCircle className="text-2xl" />
             </Link>
           </button>
           <button className="btn btn-ghost">
-            <FaShoppingCart />
+            <FaShoppingCart className="text-2xl" />
           </button>
         </div>
       </div>
 
       {/* Mobile View */}
-      <div className="lg:hidden md:hidden navbar">
+      <div className="lg:hidden md:hidden navbar flex items-center justify-between">
         <button onClick={toggleSidebar} className="btn btn-ghost">
-          {/* Hamburger Icon */}
-          <RxHamburgerMenu />
+          <RxHamburgerMenu className="text-2xl" />
         </button>
-        <Link
-          to="/"
-          className="btn btn-ghost normal-case text-xl navbar-center ml-12"
-        >
-          BookNest
+        <Link to="/" className=" normal-case text-3xl">
+          <img src={logo} alt="BookNest Logo" className="w-[120px] h-auto" />
         </Link>
-        <button className="navbar-end">
+        <button className="btn btn-ghost text-2xl">
           <FaShoppingCart />
         </button>
       </div>
 
       {/* Sidebar for Mobile */}
       <div
-        className={`fixed top-0 left-0 h-full w-[100px] bg-base-200 shadow-lg z-50 transform ${
+        className={`fixed top-0 left-0 h-full w-[200px] bg-base-200 shadow-lg z-50 transform ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out`}
       >
@@ -150,7 +105,6 @@ const Navbar = () => {
           className="btn btn-square btn-ghost absolute top-4 right-4"
           onClick={toggleSidebar}
         >
-          {/* Close Icon */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
@@ -167,10 +121,10 @@ const Navbar = () => {
           </svg>
         </button>
         <ul className="menu p-4">
-          {navlinks.map((d, i) => (
-            <Link key={i} className="font-bold" to={d.link}>
-              {d.labe}
-            </Link>
+          {navlinks.map((navlink, index) => (
+            <li key={index} className="py-2 text-xl">
+              <Link to={navlink.link}>{navlink.label}</Link>
+            </li>
           ))}
         </ul>
       </div>
