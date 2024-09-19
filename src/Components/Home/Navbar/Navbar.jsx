@@ -70,6 +70,9 @@ const Navbar = () => {
         <button className="btn btn-ghost text-xl">
           <CiSearch />
         </button>
+        <button className="btn btn-ghost text-xl">
+          <MdAccountCircle />
+        </button>
         <Link to="login">
           <button className="btn btn-ghost text-xl">
             <MdAccountCircle />
@@ -109,6 +112,7 @@ const Navbar = () => {
             <CiSearch className="" />
           </button>
           <button className="btn btn-ghost">
+            <MdAccountCircle />
             <Link to="/login">
               <MdAccountCircle />
             </Link>

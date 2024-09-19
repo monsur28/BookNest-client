@@ -8,7 +8,10 @@ import "swiper/css/pagination";
 // import required modules
 import { Autoplay, Navigation } from "swiper/modules";
 
+
 const Brand = () => {
+ 
+  
   return (
     <div className="container mx-auto my-6 md:my-14 lg:my-28">
       <Swiper

@@ -3,6 +3,11 @@ import Main from "../Components/Main";
 import Home from "../Components/Home/Home";
 import Login from "../Page/Login/Login";
 import Register from "../Page/Register/Register";
+export const router = createBrowserRouter([
+  {
+    path: "/",
+ element: <Main />,
+
 
 export const router = createBrowserRouter([
   {
