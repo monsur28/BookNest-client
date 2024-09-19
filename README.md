@@ -60,14 +60,14 @@ Backend:
 
 **For frontend: Create a .env file in the frontend directory and add the following**:
 
-    ```bash
+```bash
     REACT_APP_FIREBASE_API_KEY=your-firebase-api-key
     REACT_APP_FIREBASE_AUTH_DOMAIN=your-auth-domain
     REACT_APP_FIREBASE_PROJECT_ID=your-project-id
     REACT_APP_FIREBASE_STORAGE_BUCKET=your-storage-bucket
     REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your-sender-id
     REACT_APP_FIREBASE_APP_ID=your-app-id
-    ```
+```
 
 **For backend: Create a .env file in the backend directory and add the following**:
 
@@ -98,7 +98,7 @@ npm start
 
 Folder Structure
 
-```bash
+````bash
 
 booknest-ecommerce/
 ├── backend/           # Backend server code
@@ -113,7 +113,7 @@ booknest-ecommerce/
 │   │   ├── context/    # Context API for state management
 │   │   └── App.js      # Main React App component
 └── README.md          # Project documentation
-```
+``
 
 **How to Contribute**
 Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
@@ -124,7 +124,7 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 
 ```bash
 git checkout -b feature-name
-```
+````
 
 3. Commit your changes:
 
