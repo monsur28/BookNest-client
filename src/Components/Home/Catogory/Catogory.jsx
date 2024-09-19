@@ -1,11 +1,11 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
 
 // Import Swiper styles
-import 'swiper/css';
+import "swiper/css";
 // import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import { useEffect, useState } from 'react';
+import "swiper/css/navigation";
+import { useEffect, useState } from "react";
 
 const Catogory = () => {
   const [catrgory, setCategory] = useState([]);
@@ -17,39 +17,38 @@ const Catogory = () => {
   }, []);
 
   return (
-    <div className='mb-5'>
-      <h1 className="text-xl lg:text-4xl font-semibold text-black mb-2">Catogory</h1>
+    <div className="mb-5">
+      <h1 className="text-xl lg:text-4xl font-semibold text-black mb-2">
+        Catogory
+      </h1>
 
       <Swiper
-
         slidesPerView={4}
         centeredSlides={true}
-        spaceBetween={30}
+        spaceBetween={20}
         pagination={{
-          type: 'fraction',
+          type: "fraction",
         }}
         navigation={true}
         modules={[Navigation]}
         className="mySwiper"
       >
-
-        {
-          catrgory.map(cat => <SwiperSlide key={cat.image}>
+        {catrgory.map((cat) => (
+          <SwiperSlide key={cat.image}>
             <div className="flex flex-col items-center">
-            <img src={cat.image} className="lg:w-72 lg:h-[300px] w-96 h-40 mb-5 hover:scale-105 transition-transform" alt="Book 1"/>
-            <div className="text-center">
+              <img
+                src={cat.image}
+                className="lg:w-72 lg:h-[300px] w-96 h-40 mb-5 hover:scale-105 transition-transform"
+                alt="Book 1"
+              />
+              <div className="text-center">
                 <p className="font-semibold">{cat.name}</p>
+              </div>
             </div>
-        </div>
-
-
-          </SwiperSlide>)
-        }
-
-
-
+          </SwiperSlide>
+        ))}
       </Swiper>
-    </div >
+    </div>
   );
 };
 
