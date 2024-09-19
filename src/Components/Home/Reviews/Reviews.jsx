@@ -14,7 +14,6 @@ const Reviews = () => {
           src="https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/h1-bg2.jpg"
           alt=""
         />
-
         <div className="lg:w-1/3 w-2/3 rounded-lg absolute lg:-mt-60 -mt-44 ml-20 lg:ml-20 bg-gray-50 border-2 p-2">
           <Swiper
             cssMode={true}
