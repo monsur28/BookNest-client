@@ -21,7 +21,7 @@ const Catogory = () => {
       <Swiper
         slidesPerView={4}
         centeredSlides={true}
-        spaceBetween={30}
+        spaceBetween={20}
         pagination={{
           type: "fraction",
         }}
