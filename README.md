@@ -44,17 +44,17 @@ Make sure you have the following installed on your local machine:
 
 Frontend:
 
-    ```bash
+```bash
     cd frontend
     npm install
-    ```
+```
 
 Backend:
 
-    ```bash
+```bash
     cd backend
     npm install
-    ```
+```
 
 3.**Create environment variables**:
 
