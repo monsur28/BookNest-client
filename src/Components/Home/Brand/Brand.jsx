@@ -8,11 +8,14 @@ import "swiper/css/pagination";
 // import required modules
 import { Autoplay, Navigation } from "swiper/modules";
 
+
 const Brand = () => {
+ 
+  
   return (
-    <div className="container mx-auto lg:my-28">
+    <div className="container mx-auto my-6 md:my-14 lg:my-28">
       <Swiper
-        slidesPerView={6}
+        slidesPerView={3} // Default for large screens (desktop)
         spaceBetween={30}
         autoplay={{
           delay: 2000,
@@ -21,6 +24,23 @@ const Brand = () => {
         pagination={{
           clickable: false,
         }}
+        breakpoints={{
+          // When window width is <= 576px (mobile), 3 slides per view
+          576: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          // When window width is > 768px and <= 1024px (tablet), 4 slides per view
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 25,
+          },
+          // When window width is > 1280px (desktop), 6 slides per view
+          1280: {
+            slidesPerView: 6,
+            spaceBetween: 30,
+          },
+        }}
         modules={[Autoplay, Navigation]}
         className="mySwiper flex items-center justify-center"
       >
@@ -28,63 +48,63 @@ const Brand = () => {
           <img
             className="md:h-20 lg:h-32"
             src="https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/brand_1.svg"
-            alt=""
+            alt="Brand 1"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             className="md:h-20 lg:h-32"
             src="https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/brand_2.svg"
-            alt=""
+            alt="Brand 2"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             className="md:h-20 lg:h-32"
             src="https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/brand_3.svg"
-            alt=""
+            alt="Brand 3"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             className="md:h-20 lg:h-32"
             src="https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/brand_4.svg"
-            alt=""
+            alt="Brand 4"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             className="md:h-20 lg:h-32"
             src="https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/brand_5.svg"
-            alt=""
+            alt="Brand 5"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             className="md:h-20 lg:h-32"
             src="https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/brand_6.svg"
-            alt=""
+            alt="Brand 6"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className=" h-8 md:h-20 lg:h-36"
+            className="h-16 md:h-20 lg:h-36"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4kWGkqPFdXNC5JisMO8VUSusMafaFfKFnQA&s"
-            alt=""
+            alt="Brand 7"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className="h-8 md:h-20 lg:h-40"
+            className="h-20 lg:h-40"
             src="https://cdn.freebiesupply.com/logos/large/2x/the-black-book-logo-png-transparent.png"
-            alt=""
+            alt="Brand 8"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className="md:h-20 lg:h-40"
+            className="h-20 lg:h-40"
             src="https://d3bzyjrsc4233l.cloudfront.net/news/Peach_sSVKDnq.png"
-            alt=""
+            alt="Brand 9"
           />
         </SwiperSlide>
       </Swiper>
