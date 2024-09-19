@@ -113,7 +113,7 @@ booknest-ecommerce/
 │   │   ├── context/    # Context API for state management
 │   │   └── App.js      # Main React App component
 └── README.md          # Project documentation
-``
+```
 
 **How to Contribute**
 Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
