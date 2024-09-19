@@ -25,11 +25,12 @@ const Banner = () => {
  
       <div className="w-full  mx-auto flex  flex-col md:flex-row  overflow-hidden">
   {/* Left Side: Image */}
-  <div className="w-1/2 p-8 flex flex-col justify-center  text-white">
+  
+  <div className="w-full p-8 flex flex-col justify-center  text-white font-[sans-serif]">
 
 
   <h2 className="mx-auto uppercase font-light">special offer</h2>
-    <p className=" text-white mb- mx-auto font-bold text-[50px] text-center">
+    <p className=" text-white mx-auto font-bold text-[50px] text-center ">
       Reading is for<br/> all Ages
     </p>
     <h4 className="font-semibold text-xl mx-auto mb-[40px]">By your books In a store</h4>
@@ -41,7 +42,8 @@ const Banner = () => {
   </div>
 
   {/* Right Side: Content */}
-  <div className="w-1/2  flex p-20">
+  <div className="w-full  flex p-20">
+    
   <img
       src="https://i.ibb.co.com/fYKVzJB/36809135.jpg"
       alt="Banner Image"
