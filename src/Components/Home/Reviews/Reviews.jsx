@@ -1,32 +1,90 @@
+/* eslint-disable react/no-unescaped-entities */
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
+
 const Reviews = () => {
   return (
-    <div className="px-20">
-      <div className=" bg-Community bg-cover bg-no-repeat py-20 px-5 rounded-lg">
-        <div className="flex flex-col justify-center items-center">
-          <div className="flex flex-col justify-center items-center">
-            <h1 className="text-4xl text-white font-bold my-2">
-              Get <span className=" text-orange-600">10%</span> off your order!
-            </h1>
+    <div>
+      <div className="relative  md:mb-72 mb-96 my-30 ">
+        <img
+          className="md:h-full h-60 w-full"
+          src="https://demo2.pavothemes.com/bookory/wp-content/uploads/2022/02/h1-bg2.jpg"
+          alt=""
+        />
 
-            <p className=" font-medium text-white">
-              Enter your email and receive a 10% discount on your next order!
-            </p>
-          </div>
-          <div>
-            <div class="flex rounded-3xl my-2 overflow-hidden max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                class="w-full outline-none bg-white text-gray-600 text-sm px-4 py-3"
-              />
-              <button
-                type="btn"
-                class="flex items-center justify-center bg-orange-500 px-5 text-sm font-semibold text-white"
-              >
-                Subscribe
-              </button>
-            </div>
-          </div>
+        <div className="lg:w-1/3 w-2/3 rounded-lg absolute lg:-mt-60 -mt-44 ml-20 lg:ml-20 bg-gray-50 border-2 p-2">
+          <Swiper
+            cssMode={true}
+            navigation={true}
+            pagination={true}
+            mousewheel={true}
+            keyboard={true}
+            modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <h1 className="text-3xl font-semibold mt-10 text-center text-gray-600">
+                What people saying!
+              </h1>
+
+              <div className="flex justify-center items-center">
+                <div className="divider divider-warning w-1/5"></div>
+              </div>
+
+              <p className="font-medium my-10 px-10">
+                "BookNest is my go-to bookstore for all genres. The variety is
+                fantastic, and the staff are incredibly helpful in recommending
+                new reads."
+              </p>
+
+              <h1 className="text-2xl font-medium text-center mb-20">
+                Alice Johnson
+              </h1>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <h1 className="text-3xl font-semibold mt-10 text-center text-gray-600">
+                What people saying!
+              </h1>
+
+              <div className="flex justify-center items-center">
+                <div className="divider divider-warning w-1/5"></div>
+              </div>
+
+              <p className="font-medium my-10 px-10">
+                "The collection at BookNest is impressive, but I especially
+                appreciate the discounts and promotional offers they frequently
+                provide."
+              </p>
+
+              <h1 className="text-2xl font-medium text-center mb-20">
+                Sophia Martinez
+              </h1>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <h1 className="text-3xl font-semibold mt-10 text-center text-gray-600">
+                What people saying!
+              </h1>
+
+              <div className="flex justify-center items-center">
+                <div className="divider divider-warning w-1/5"></div>
+              </div>
+
+              <p className="font-medium my-10 px-10">
+                "I love the user-friendly website of BookNest. It makes finding
+                books easy, and their delivery service is always on time. Highly
+                recommended!."
+              </p>
+
+              <h1 className="text-2xl font-medium text-center lg:mb-20">
+                Michael Roberts
+              </h1>
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
     </div>
