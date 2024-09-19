@@ -18,10 +18,6 @@ const Catogory = () => {
 
   return (
     <div className="mb-5">
-      <h1 className="text-xl lg:text-4xl font-semibold text-black mb-2">
-        Catogory
-      </h1>
-
       <Swiper
         slidesPerView={4}
         centeredSlides={true}
