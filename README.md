@@ -98,21 +98,20 @@ npm start
 
 Folder Structure
 
-````bash
-
-booknest-ecommerce/
-├── backend/           # Backend server code
-│   ├── controllers/   # API controllers
-│   ├── models/        # Mongoose models
-│   ├── routes/        # API routes
-│   └── app.js         # Express app setup
-├── frontend/          # Frontend React app
-│   ├── src/           # React source files
-│   │   ├── components/ # UI components
-│   │   ├── pages/      # Page components
-│   │   ├── context/    # Context API for state management
-│   │   └── App.js      # Main React App component
-└── README.md          # Project documentation
+```bash
+    booknest-ecommerce/
+    ├── backend/           # Backend server code
+    │   ├── controllers/   # API controllers
+    │   ├── models/        # Mongoose models
+    │   ├── routes/        # API routes
+    │   └── app.js         # Express app setup
+    ├── frontend/          # Frontend React app
+    │   ├── src/           # React source files
+    │   │   ├── components/ # UI components
+    │   │   ├── pages/      # Page components
+    │   │   ├── context/    # Context API for state management
+    │   │   └── App.js      # Main React App component
+    └── README.md          # Project documentation
 ```
 
 **How to Contribute**
@@ -124,7 +123,7 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 
 ```bash
 git checkout -b feature-name
-````
+```
 
 3. Commit your changes:
 
