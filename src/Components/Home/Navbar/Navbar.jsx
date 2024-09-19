@@ -73,6 +73,11 @@ const Navbar = () => {
         <button className="btn btn-ghost text-xl">
           <MdAccountCircle />
         </button>
+        <Link to="login">
+          <button className="btn btn-ghost text-xl">
+            <MdAccountCircle />
+          </button>
+        </Link>
         <button className="btn btn-ghost text-xl">
           <FaShoppingCart />
         </button>
@@ -108,6 +113,9 @@ const Navbar = () => {
           </button>
           <button className="btn btn-ghost">
             <MdAccountCircle />
+            <Link to="/login">
+              <MdAccountCircle />
+            </Link>
           </button>
           <button className="btn btn-ghost">
             <FaShoppingCart />
